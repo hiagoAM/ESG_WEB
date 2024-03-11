@@ -1,0 +1,95 @@
+:root{
+    --cor-cabecalho: rgb(192, 220, 222);
+    --cor-generica: black;
+    --cor-hover: green;
+    --cor-background: rgb(79, 165, 191);
+    --cor-footer: rgb(192, 220, 222);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    height: 50px;
+    text-align: right;
+}
+
+.menu-option a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black; 
+    font-family: sans-serif;
+    transition: border-bottom 0.2s;
+}
+
+.menu-option a:hover{
+    border-bottom: 2px solid rgb(19, 149, 189);
+}
+
+.botao_usuario{
+    background-color: rgb(19, 149, 189);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s; 
+}
+
+.primeira_pagina{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.img-responsiva{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+body{
+
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+
+}
+
+.empresa{
+    text-decoration: none;
+    color: var(--cor-generica);
+}
+
+.empresa:hover{
+    color: var(--cor-hover);
+}
+
+.pdf{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+footer{
+
+    padding: 10px;    
+    background-color: var(--cor-footer);
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    
+}

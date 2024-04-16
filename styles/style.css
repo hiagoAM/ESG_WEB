@@ -39,8 +39,51 @@
     transition: border-bottom 0.2s;
 }
 
+.linguagem-switcher{
+    position: relative;
+    display: inline-block;
+}
+
+.opcoes-idioma{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px, 8px, 16px, 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.opcoes-idioma a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.opcoes-idioma a:hover{
+    background-color: #f1f1f1;
+}
+
+.linguagem-switcher:focus-within .opcoes-idioma{
+    display: block;
+}
+
 .menu-option a:hover{
     border-bottom: 2px solid rgb(19, 149, 189);
+}
+
+.botao_menu{
+    background-color: rgb(220, 227, 228);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s; 
 }
 
 .botao_usuario{
@@ -76,7 +119,7 @@
     font-size: 1.5em;
     line-height: 2em;
     font-family:"Inter", sans-serif;
-    color: rgb(86, 90, 86);
+    color: rgb(108, 116, 108);
 }
 
 .container-texto h1{
@@ -97,8 +140,9 @@
 }
 
 .container-texto a{
+    font-weight: bold;
     text-decoration: none;
-    color: rgb(24, 56, 139);
+    color: rgb(5, 40, 130);
     
 }
 
@@ -115,11 +159,37 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin-bottom: 3em; 
+    margin-bottom: 1em; 
 }
 
+.container-esg_item-cursos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.container-esg_item-cursos p1{
+    font-size: 0.8em;
+    line-height: 1;
+    font-family:"Inter", sans-serif;
+    color: rgb(148, 193, 30);
+    margin-top: auto;
+    text-align: justify;
+    width: 210px;
+}
+
+.container-esg_item-cursos p2{
+    font-size: 0.8em;
+    font-family:"Inter", sans-serif;
+    color: rgb(66, 122, 9);
+    margin-top: auto;
+    text-align: justify;
+    width: 210px;
+}
+
+
 .container-esg_item p1{
-    font-size: 1em;
+    font-size:1em;
     font-family:"Inter", sans-serif;
     color: rgb(148, 193, 30);
     margin-top: auto;
@@ -156,6 +226,8 @@
         gap: 1.5em;
     }
 }
+
+
 
 .container-conquista{
     display: flex; 
@@ -238,10 +310,30 @@
     margin-bottom: 1em;
 }
 
-/* .container-metodo__sustentavel{
+
+
+
+.container-metodo__sustentavel{
     display: flex;
     font-family:"Inter", sans-serif;
     margin-left: 10%; 
+}
+
+
+.container-metodo__sustentavel__img{
+    margin-right: 15%;
+}
+
+.container-metodo__sustentavel__img-plataforma-diretira{
+    margin-right: 10%;
+}
+
+.container-metodo__sustentavel__img-ing{
+    margin-top: 10%;
+}
+
+.container-metodo__sustentavel__img_mobile{
+    display: none;
 }
 
 .container-metodo__sustentavel__texto h1{
@@ -253,23 +345,51 @@
 }
 
 .container-metodo__sustentavel__texto p{
-
-    font-size: 1.2em;
-    line-height: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.8em;
     color: rgb(66, 122, 9);
     margin-bottom: 1em;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 15%;
 }
 
+.container-metodo__sustentavel__texto-direita p{
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: rgb(66, 122, 9);
+    margin-bottom: 1em;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 20%;
+}
 
-
-
+.container-metodo__sustentavel__texto-esq p{
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: rgb(66, 122, 9);
+    margin-bottom: 1em;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 10%;
+}
 
 @media (max-width: 768px){
+    .container-metodo__sustentavel__img_mobile{
+        display:block ;
+        width: 400px;
+        height: center;
+        margin-left: 9%;
+    }
     .container-metodo__sustentavel__img{
         display: none;
     }
 
-} */
+    .container-metodo__sustentavel__img-ing{
+        display: none;
+    }
+
+}
 
 .img-metodo{
     width: 100%;
@@ -361,3 +481,19 @@ body{
     width: 100%;
     height: center;
 }
+
+
+.container-produtos-mobile{
+    display: none;
+}
+
+@media (max-width: 700px) { 
+    .container-produtos-pc{
+        display: none;
+    }
+    
+    .container-produtos-mobile {
+        display: block;
+    }
+}
+

@@ -12,31 +12,72 @@
 
     <body>
         <header class="cabecalho">
-            <img src="assets/logo_Geplan_ambiental.jpg" class="imagem-logo">
 
+            <img src="assets/logo_Geplan_ambiental.jpg" class="imagem-logo">
+        
             <nav>
-                <div class="menu-option">
+                <div class="lingua-mobile">
                     <div class="linguagem-switcher">
-                         <button class="lingua-atual" tabindex="0">
+                        <button class="lingua-atual" tabindex="0">
                             <img src="assets/EG_bandeira.jpg" height="14" width="15">
-                         </button>
-                         <div class="opcoes-idioma">
+                        </button>
+                        <div class="opcoes-idioma">
                             <a href="index.html">
                                 <img src="assets/BR-bandeira.jpg" height="14" width="15">
                             </a>
                             <a href="index_esp.html">
                                 <img src="assets/ES-bandeira.jpg" height="14" width="15">
-                            </a>                        
-                         </div>
+                            </a> 
+                        </div>
                     </div>
-                    <a href="index.html">ESG</a>
-                    <a href="andamentoObra.html">Stages</a>
-                    <a href="index.html">Home</a>
-                    <a href="manifesto.html">Products</a>
-                    <a href="acesso.html" class="botao_usuario">User Panel</a>
+                </div>
+            </nav>
+        
+            <nav>
+                <div class="menu-mobile">
+                    <div class="menu-ativo">
+                        
+                        <button class="menu-button">
+                            <img src="assets/menu_mobile.jpg" height="39" width="51">
+                        </button>
+                        <div class="opcoes-menu">
+                            <a href="index_ing.html" class="botao_menu">ESG</a>
+                            <a href="cursos.html" class="botao_menu">Courses</a>
+                            <a href="andamentoObra.html" class="botao_menu">Work</a>
+                            <a href="manifesto_ing.html" class="botao_menu">Products</a>
+                            <a href="acessoRestrigo.html" class="botao_usuario">User Panel</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="menu-option">
+                    <div class="linguagem-switcher">
+        
+                        <button class="lingua-atual" tabindex="0">
+                            <img src="assets/EG_bandeira.jpg" height="14" width="15">
+                        </button>
+        
+                        <div class="opcoes-idioma">
+        
+                            <a href="index.html">
+                                <img src="assets/BR-bandeira.jpg" height="14" width="15">
+                            </a>
+                            <a href="index_esp.html">
+                                <img src="assets/ES-bandeira.jpg" height="14" width="15">
+                            </a> 
+                        </div>
+        
+                    </div>
+        
+                    <a href="index_ing.html" class="botao_menu">ESG</a>
+                    <a href="cursos.html" class="botao_menu">Courses</a>
+                    <a href="andamentoObra.html" class="botao_menu">Work</a>
+                    <a href="manifesto_ing.html" class="botao_menu">Products</a>
+                    <a href="acessoRestrigo.html" class="botao_usuario">User Panel</a>
                 </div>
             </nav>
         </header>
+        
 
         <main class="primeira_pagina">
             <section class="container-imagem">
@@ -50,15 +91,21 @@
                </div>
                <section class="container-esg">
                     <div class="container-esg_item">
-                        <img src="assets/E.jpg" height="198px" width="210px">
+                        <a href="doctype/relatorio_Ambiental.pdf" target="_blank">
+                            <img src="assets/E.jpg" height="198px" width="210px">
+                        </a>
                         <p1>Through the implementation of environmental programs, it was possible to ensure the safety and integrity of the environment, as well as the protection of all forms of life.</p1>
                     </div>
                     <div class="container-esg_item">
-                        <img src="assets/S.jpg" height="198px" width="210px">
+                        <a href="doctype/relatorio_Social.pdf" target="_blank">
+                            <img src="assets/S.jpg" height="198px" width="210px">
+                        </a>
                         <p2>With the engagement of the population and an agenda driven by collaborators, we managed to provide a socially just environment for all involved.</p2>
                     </div>
                     <div class="container-esg_item">
-                        <img src="assets/G.jpg" height="198px" width="210px">
+                        <a href="doctype/relatorio_Governanca.pdf" target="_blank">
+                            <img src="assets/G.jpg"  height="198px" width="210px">
+                        </a>
                         <p3>Through good governance practices, we were able to implement and ensure quality policies in administration.</p3>
                     </div>
                </section>

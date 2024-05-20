@@ -2,10 +2,15 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <title>PROJETO ESG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Relatório de Sustentabilidade</title>
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     </head>
+
     <body>
         <header class="cabecalho">
 
@@ -15,13 +20,13 @@
                 <div class="lingua-mobile">
                     <div class="linguagem-switcher">
                         <button class="lingua-atual" tabindex="0">
-                            <img src="assets/EG_bandeira.jpg" height="14" width="15">
+                            <img src="assets/BR-bandeira.jpg" height="14" width="15">
                         </button>
                         <div class="opcoes-idioma">
-                            <a href="manifesto.html">
-                                <img src="assets/BR-bandeira.jpg" height="14" width="15">
+                            <a href="index_ing.html">
+                                <img src="assets/EG_bandeira.jpg" height="14" width="15">
                             </a>
-                            <a href="manifesto_esp.html">
+                            <a href="index_esp.html">
                                 <img src="assets/ES-bandeira.jpg" height="14" width="15">
                             </a> 
                         </div>
@@ -74,54 +79,28 @@
             </nav>
         </header>
 
-
-        <main>
-        
-            <div class="container-conquista__texto">
-                <h1>Sustainable Reports Prepared</h1>
+        <main class="login-page">
+            <div class="login-container">
+                <h1>Login</h1>
+                <form id="loginForm">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Entrar</button>
+                </form>
+                <p id="error-message" style="color: red;"></p>
             </div>
- 
-            <section>
-                <div class="container-texto">
-                    <p>As a result of a year of applying ESG actions, we provide for download the ESG Report prepared by the team of experts. The sum of efforts from various professionals, students, and community enthusiasts resulted in concrete actions for improving environmental, social, and economic quality for the entire community.</p>
-
-                    <section class="container-esg">
-
-                        <div class="container-esg_item-cursos">
-                            <a href="doctype/ESG_diagnostico.pdf" target="_blank">
-                                <img src="assets/diagnostico-download.jpg" height="143" width="213">
-                            </a>
-                            <p1>Sustainability Diagnosis</p1>
-                        </div>
-
-                        <div class="container-esg_item-cursos">
-                            <a href="doctype/ESG_Orla_de_Matinhos_web.pdf" target="_blank">
-                                <img src="assets/relatorio-download.jpg" height="143" width="213">
-                            </a>
-                            <p2>2nd Annual ESG Report</p2>
-                        </div>
-            
-                        <div class="container-esg_item-cursos">
-                            <a href="doctype/CARTILHA_Matinhos_20x20_FINAL_2024_7.pdf" target="_blank">
-                                <img src="assets/livro-download.jpg" height="169" width="224">
-                            </a>
-                            <p1>Matinhos Beaches Recovery Guidebook</p1>
-                        </div>
-            
-                    </section>
-
-                    <p>In addition to the ESG report, prepared by the Geplan Ambiental team, the book on Matinhos Beaches Recovery was also prepared by the DTA/Aquaplan team. It is an accessible document, thoughtfully developed to record the memory of the past of Matinhos beaches, showing improvements in life quality and landscape. The book also includes various educational games for more active readers.</p>
-                </div>
-
-            </section>
-
         </main>
 
-        <footer>
-            <p class="nota-final">
-                Learn more about sustainability actions, get in touch to meet our team of experts to transform your enterprise and cooperate with global sustainable development measures
-            </p>
-            <img src="assets/rodape_final_restinga.jpg" class="imagem-rodape">
-        </footer>
+        <script src="scripts/login.js"></script>
+
     </body>
+
+    <footer>
+            
+    </footer>
+
 </html>

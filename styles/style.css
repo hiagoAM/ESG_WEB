@@ -27,6 +27,71 @@
     align-items: center;
 }
 
+
+
+
+
+.lingua-mobile{
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.opcoes-menu {
+    display: none;
+    position: fixed;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background-color: rgba(88, 84, 84, 0.9);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+.opcoes-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black; 
+    
+}
+
+.opcoes-menu a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .menu-option {
+        display: none;
+    }
+
+    .lingua-mobile{
+        display: block;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile:focus-within .opcoes-menu {
+        display: block;
+    }
+}
+
+
+
+
+
 .menu-option a{
     display: inline-flex;
     margin: 0 20px;
@@ -39,6 +104,12 @@
     transition: border-bottom 0.2s;
 }
 
+.lingua-atual{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .linguagem-switcher{
     position: relative;
     display: inline-block;
@@ -47,9 +118,7 @@
 .opcoes-idioma{
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px, 8px, 16px, 0px rgba(0,0,0,0.2);
+    background-color:none;
     z-index: 1;
 }
 
@@ -99,6 +168,16 @@ display: block;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s; 
 }
+
+
+
+
+
+
+
+
+
+
 
 .primeira_pagina{
     gap: 10px;
@@ -495,5 +574,57 @@ body{
     .container-produtos-mobile {
         display: block;
     }
+}
+
+
+/*------------------------------------------*/
+
+
+
+.login-page, .private-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-container, .private-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-container h1, .private-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container label, .login-container input, .login-container button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #555;
+}
+
+.nota-final {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem-rodape {
+    display: block;
+    margin: 0 auto;
 }
 
